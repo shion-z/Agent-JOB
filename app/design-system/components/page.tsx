@@ -136,11 +136,11 @@ export default function ComponentsPage() {
         <div className="flex items-center justify-between mb-2">
           <h1 className="text-3xl font-bold">Components</h1>
           <div className="flex gap-3">
-            <Link href="/home/designtokens">
-              <Button variant="gray-m">Design Tokens</Button>
+            <Link href="/design-system/designtokens">
+              <Button variant="primary-s">Design Tokens</Button>
             </Link>
-            <Link href="/home">
-              <Button variant="gray-m">Back to Home</Button>
+            <Link href="/design-system">
+              <Button variant="gray-m">Back to design-system</Button>
             </Link>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function ComponentsPage() {
             <CardContent className="space-y-8">
               <ButtonStateDisplay variant="secondary-s" label="セカンダリ小" />
               <ButtonStateDisplay variant="secondary-s-top" label="セカンダリ小上" />
-              <ButtonStateDisplay variant="secondary-m" label="セカンダリ中" />
+              <ButtonStateDisplay variant="primary-m" label="セカンダリ中" />
             </CardContent>
           </Card>
 
