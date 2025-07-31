@@ -140,7 +140,7 @@ export default function ComponentsPage() {
               <Button variant="primary-s">Design Tokens</Button>
             </Link>
             <Link href="/design-system">
-              <Button variant="gray-m">Back to design-system</Button>
+              <Button variant="gray-m">Design System Dashboard</Button>
             </Link>
           </div>
         </div>

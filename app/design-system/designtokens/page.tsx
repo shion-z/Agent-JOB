@@ -276,7 +276,7 @@ export default function DesignTokensPage() {
               <Button variant="primary-s">Components</Button>
             </Link>
             <Link href="/design-system">
-              <Button variant="gray-m">Back to design-system</Button>
+              <Button variant="gray-m">Back to Design System Dashboard</Button>
             </Link>
           </div>
         </div>
