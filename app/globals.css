@@ -357,6 +357,11 @@
   box-shadow: var(--shadow-none);
 }
 
+.color-orange-700 {
+  background: var(--secondary-500);
+}
+
+
 /* Common gradient utilities */
 .bg-gradient-blue-primary {
   background: var(--gradient-blue-primary);

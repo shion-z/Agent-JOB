@@ -14,15 +14,14 @@ export default function Dashboard() {
       </div>
 
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Quick Navigation</h2>
-
+        
         <div className="grid md:grid-cols-2 gap-6">
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader className="text-center">
               <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
                 <Component className="h-8 w-8 text-primary" />
               </div>
-              <CardTitle className="text-xl">Components</CardTitle>
+              <CardTitle className="text-xl">テキスト</CardTitle>
               <CardDescription>
                 Explore all available UI components with their variants and usage examples
               </CardDescription>
@@ -39,7 +38,7 @@ export default function Dashboard() {
               <div className="mx-auto mb-4 p-3 bg-secondary/10 rounded-full w-fit">
                 <Palette className="h-8 w-8 text-secondary-700" style={{ color: "var(--secondary-700)" }} />
               </div>
-              <CardTitle className="text-xl">Design Tokens</CardTitle>
+              <CardTitle className="text-xl">テキスト</CardTitle>
               <CardDescription>View and customize the design tokens that power the entire system</CardDescription>
             </CardHeader>
             <CardContent className="text-center">
@@ -50,14 +49,35 @@ export default function Dashboard() {
           </Card>
         </div>
 
-        <div className="mt-12 p-6 bg-muted rounded-lg">
-          <h3 className="text-lg font-semibold mb-3">About This Design System</h3>
-          <p className="text-muted-foreground">
-            This design system is built on top of shadcn/ui components with custom CSS tokens defined in globals.css.
-            All components inherit their styling from these centralized tokens, ensuring consistency and easy
-            customization across the entire application.
-          </p>
+        <div>
+          <div className="mt-12 p-6 bg-muted rounded-lg">
+            <h3 className="text-lg font-semibold mb-3">テキスト</h3>
+            <p className="text-muted-foreground">
+              テキスト
+テキスト
+テキスト
+テキスト
+
+            </p>
+          </div>
+          
+          <div className="mt-4 p-6 bg-muted rounded-lg">
+            <h3 className="text-lg font-semibold mb-3">UXデザイナーが既存デザインシステムを使って新規UI画面を作る場合</h3>
+            <p className="text-muted-foreground pb-4">
+              想定担当者：プロジェクトのUIを組むUXデザイナー、V0ユーザー（非エンジニア）
+            </p>
+                <div className="flex items-center p-6 pt-4 rounded-m border bg-card shadow-normal-s">
+                  <div className="text-base text-gray-600 font-medium">
+                    <h1>許可されている編集範囲</h1>
+                    <h3 className="text-sm text-gray-500 pt-4">
+                     <span className="block">• app/*/ ディレクトリ（＝各ページやフローに対応）</span><span className="block pt-2">• ページ単位の page.tsx、必要に応じて page.module.css </span><span className="block pt-2">• などomponents/ 配下で個別のページ用に分けられた補助コンポーネント（例：MyPageSection.tsxなど）</span>
+                    </h3>
+                  </div>
+                  
+                </div>
+          </div>
         </div>
+        
       </div>
     </div>
   )

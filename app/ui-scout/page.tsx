@@ -344,7 +344,7 @@ export default function ScoutingDashboard() {
       </div>
 
       {/* Main Content */}
-      <main className="ml-32 max-w-7xl py-6 px-6 min-h-screen overflow-y-auto relative z-10">
+      <main className="ml-32 max-w-screen py-6 px-6 min-h-screen overflow-y-auto relative z-10">
         <div className="mb-6">
           <div className="flex items-center justify-between">
             <div>
@@ -360,10 +360,10 @@ export default function ScoutingDashboard() {
           onValueChange={(value) => setActiveView(value as "scout" | "reports" | "usage-history")}
           className="w-full"
         >
-          <TabsList className="grid w-full grid-cols-3 max-w-lg bg-transparent border-b border-gray-200 rounded-none h-auto p-0">
+          <TabsList className="grid grid-cols-3 max-w-full bg-transparent border-b border-gray-200 rounded-none h-auto p-0">
             <TabsTrigger
               value="scout"
-              className="flex items-center gap-2 px-4 py-3 border-b-2 border-transparent data-[state=active]:border-blue-600 data-[state=active]:bg-transparent data-[state=active]:text-blue-600 data-[state=active]:shadow-none bg-transparent text-gray-600 hover:text-gray-900 rounded-none"
+              className="flex w-full items-center gap-2 px-4 py-3 border-b-2 border-transparent data-[state=active]:border-blue-600 data-[state=active]:bg-transparent data-[state=active]:text-blue-600 data-[state=active]:shadow-none bg-transparent text-gray-600 hover:text-gray-900 rounded-none"
             >
               <Search className="w-4 h-4" />
               スカウト管理
